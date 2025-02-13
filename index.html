@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just for You</title>
+    <link rel="stylesheet" href="Suprava.css" type="text/css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdf1f1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        #welcomeScreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #fff0f5;
+            animation: fadeIn 1s;
+        }
+        #mainContent {
+            display: none;
+            padding: 20px;
+            animation: fadeIn 1s;
+        }
+        #photo {
+            background-color: #880808; /* Light red */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        } 
+        #photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .video {
+            background-color: #fce4ec; /* Light pink */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .video video {
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid #ff6b6b;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #d23669;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #b1234e;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcomeScreen">
+        <h1>Hi Boo <3!</h1>
+        <p>You are about to see something truly special just for you. 💖</p>
+        <button onclick="showMainContent()">Click to Continue</button>
+    </div>
+
+    <div id="mainContent" class="container">
+        <h1>Hi Boo<3!</h1>
+        <p>I've put together something special just for you!</p>
+
+        <h2>Some of Your Beautiful Moments</h2>
+        <div id="photo" class="d-flex flex-wrap justify-content-center">
+            <img src="Photo1.jpg">
+            <img src="photo5.jpg" alt="Photo 5">
+            <img src="photo2.jpg" alt="Photo 2">
+            <img src="photo7.jpg" alt="Photo 7">
+            <img src="photo3.jpg" alt="Photo 3">
+            <img src="photo4.jpg" alt="Photo 4">
+            <img src="photo6.jpg" alt="Photo 6"><br>
+            <h2 style="color:white">We've been through so many ups & downs and still we're together 🧑🏼‍🤝‍👩🏼</h2>
+        </div>
+
+        <div class="video">
+            <h2>✨ Love of my life ✨</h2>
+            <video height="500" width="420" controls autoplay muted>
+                <source src="Video1.mp4" alt="Video 1" type="video/mp4">
+            </video>
+            <h2>No regrets, You're worth each and ever fight 🫂</h2>
+            </div>
+            
+            <div class="glimpse">
+<br>
+            <h1>✨ A glimpse of us ✨</h1>
+
+            <video height="320" width="200" controls autoplay muted>
+                <source src="Video2.mp4" alt="Video 2">
+            </video>
+            <video height="320" width="200" controls autoplay muted>
+                <source src="Video3.mp4" alt="Video 3">
+            </video>
+            <video height="320" width="200" controls autoplay muted>
+                <source src="Video4.mp4" alt="Video 4">
+            </video>
+
+            <div class="Glimpse2">
+            <video height="320" width="200" controls autoplay muted>
+                <source src="Video5.mp4" alt="Video 5">
+            </video>
+            <video height="320" width="200" controls autoplay muted>
+                <source src="Video6.mp4" alt="Video 6">
+            </video>
+            <video height="320" width="200" controls autoplay muted>
+                <source src="Video7.mp4" alt="Video 7">
+            </video>
+            <h2>I'd code forever if every codes contained you ✨</h2>
+        </div>
+<br>
+<h1>A Song That Reminds Me of You</h1>
+<video height="320" width="200" controls autoplay>
+    <source src="Dandelions.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    <h2>Taking a look back makes me excited for our future 💕</h2>
+</video>
+
+
+        <h2>A Video Just for You</h2>
+        <video controls width="300">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <h2>If I know it was our last dance I'd dance till eternity 🌌</h2>
+        </video>
+
+        <h2>My Question is...</h2>
+        <h1>Will You Be My Valentine Forever 💕?</h1>
+        <button onclick="alert('Yay! You said Yes! 😊')">Yes</button>
+        <button onclick="alert('Haina hoola haii')">No</button>
+    </div>
+
+    <script>
+        function showMainContent() {
+            document.getElementById('welcomeScreen').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
